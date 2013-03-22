@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D779EDAE16FC912E003C686E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D779EDAD16FC912E003C686E /* UIKit.framework */; };
+		D779EDB016FC912E003C686E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D779EDAF16FC912E003C686E /* Foundation.framework */; };
+		D779EDB216FC912E003C686E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D779EDB116FC912E003C686E /* CoreGraphics.framework */; };
+		D779EDB816FC912E003C686E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D779EDB616FC912E003C686E /* InfoPlist.strings */; };
+		D779EDBA16FC912E003C686E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D779EDB916FC912E003C686E /* main.m */; };
+		D779EDBE16FC912E003C686E /* NMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D779EDBD16FC912E003C686E /* NMAppDelegate.m */; };
+		D779EDC016FC912F003C686E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D779EDBF16FC912F003C686E /* Default.png */; };
+		D779EDC216FC912F003C686E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D779EDC116FC912F003C686E /* Default@2x.png */; };
+		D779EDC416FC912F003C686E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D779EDC316FC912F003C686E /* Default-568h@2x.png */; };
+		D779EDCC16FC912F003C686E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D779EDCB16FC912F003C686E /* SenTestingKit.framework */; };
+		D779EDCD16FC912F003C686E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D779EDAD16FC912E003C686E /* UIKit.framework */; };
+		D779EDCE16FC912F003C686E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D779EDAF16FC912E003C686E /* Foundation.framework */; };
+		D779EDD616FC912F003C686E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D779EDD416FC912F003C686E /* InfoPlist.strings */; };
+		D779EDD916FC912F003C686E /* NMRemoteBundleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D779EDD816FC912F003C686E /* NMRemoteBundleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D779EDCF16FC912F003C686E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D779EDA216FC912E003C686E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D779EDA916FC912E003C686E;
+			remoteInfo = NMRemoteBundle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D779EDAA16FC912E003C686E /* NMRemoteBundle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMRemoteBundle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D779EDAD16FC912E003C686E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D779EDAF16FC912E003C686E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D779EDB116FC912E003C686E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D779EDB516FC912E003C686E /* NMRemoteBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NMRemoteBundle-Info.plist"; sourceTree = "<group>"; };
+		D779EDB716FC912E003C686E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D779EDB916FC912E003C686E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D779EDBB16FC912E003C686E /* NMRemoteBundle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMRemoteBundle-Prefix.pch"; sourceTree = "<group>"; };
+		D779EDBC16FC912E003C686E /* NMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMAppDelegate.h; sourceTree = "<group>"; };
+		D779EDBD16FC912E003C686E /* NMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMAppDelegate.m; sourceTree = "<group>"; };
+		D779EDBF16FC912F003C686E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D779EDC116FC912F003C686E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D779EDC316FC912F003C686E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D779EDCA16FC912F003C686E /* NMRemoteBundleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NMRemoteBundleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D779EDCB16FC912F003C686E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D779EDD316FC912F003C686E /* NMRemoteBundleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NMRemoteBundleTests-Info.plist"; sourceTree = "<group>"; };
+		D779EDD516FC912F003C686E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D779EDD716FC912F003C686E /* NMRemoteBundleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMRemoteBundleTests.h; sourceTree = "<group>"; };
+		D779EDD816FC912F003C686E /* NMRemoteBundleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMRemoteBundleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D779EDA716FC912E003C686E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D779EDAE16FC912E003C686E /* UIKit.framework in Frameworks */,
+				D779EDB016FC912E003C686E /* Foundation.framework in Frameworks */,
+				D779EDB216FC912E003C686E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D779EDC616FC912F003C686E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D779EDCC16FC912F003C686E /* SenTestingKit.framework in Frameworks */,
+				D779EDCD16FC912F003C686E /* UIKit.framework in Frameworks */,
+				D779EDCE16FC912F003C686E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D779EDA116FC912E003C686E = {
+			isa = PBXGroup;
+			children = (
+				D779EDB316FC912E003C686E /* NMRemoteBundle */,
+				D779EDD116FC912F003C686E /* NMRemoteBundleTests */,
+				D779EDAC16FC912E003C686E /* Frameworks */,
+				D779EDAB16FC912E003C686E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D779EDAB16FC912E003C686E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D779EDAA16FC912E003C686E /* NMRemoteBundle.app */,
+				D779EDCA16FC912F003C686E /* NMRemoteBundleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D779EDAC16FC912E003C686E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D779EDAD16FC912E003C686E /* UIKit.framework */,
+				D779EDAF16FC912E003C686E /* Foundation.framework */,
+				D779EDB116FC912E003C686E /* CoreGraphics.framework */,
+				D779EDCB16FC912F003C686E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D779EDB316FC912E003C686E /* NMRemoteBundle */ = {
+			isa = PBXGroup;
+			children = (
+				D779EDBC16FC912E003C686E /* NMAppDelegate.h */,
+				D779EDBD16FC912E003C686E /* NMAppDelegate.m */,
+				D779EDB416FC912E003C686E /* Supporting Files */,
+			);
+			path = NMRemoteBundle;
+			sourceTree = "<group>";
+		};
+		D779EDB416FC912E003C686E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D779EDB516FC912E003C686E /* NMRemoteBundle-Info.plist */,
+				D779EDB616FC912E003C686E /* InfoPlist.strings */,
+				D779EDB916FC912E003C686E /* main.m */,
+				D779EDBB16FC912E003C686E /* NMRemoteBundle-Prefix.pch */,
+				D779EDBF16FC912F003C686E /* Default.png */,
+				D779EDC116FC912F003C686E /* Default@2x.png */,
+				D779EDC316FC912F003C686E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D779EDD116FC912F003C686E /* NMRemoteBundleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D779EDD716FC912F003C686E /* NMRemoteBundleTests.h */,
+				D779EDD816FC912F003C686E /* NMRemoteBundleTests.m */,
+				D779EDD216FC912F003C686E /* Supporting Files */,
+			);
+			path = NMRemoteBundleTests;
+			sourceTree = "<group>";
+		};
+		D779EDD216FC912F003C686E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D779EDD316FC912F003C686E /* NMRemoteBundleTests-Info.plist */,
+				D779EDD416FC912F003C686E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D779EDA916FC912E003C686E /* NMRemoteBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D779EDDC16FC912F003C686E /* Build configuration list for PBXNativeTarget "NMRemoteBundle" */;
+			buildPhases = (
+				D779EDA616FC912E003C686E /* Sources */,
+				D779EDA716FC912E003C686E /* Frameworks */,
+				D779EDA816FC912E003C686E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NMRemoteBundle;
+			productName = NMRemoteBundle;
+			productReference = D779EDAA16FC912E003C686E /* NMRemoteBundle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D779EDC916FC912F003C686E /* NMRemoteBundleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D779EDDF16FC912F003C686E /* Build configuration list for PBXNativeTarget "NMRemoteBundleTests" */;
+			buildPhases = (
+				D779EDC516FC912F003C686E /* Sources */,
+				D779EDC616FC912F003C686E /* Frameworks */,
+				D779EDC716FC912F003C686E /* Resources */,
+				D779EDC816FC912F003C686E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D779EDD016FC912F003C686E /* PBXTargetDependency */,
+			);
+			name = NMRemoteBundleTests;
+			productName = NMRemoteBundleTests;
+			productReference = D779EDCA16FC912F003C686E /* NMRemoteBundleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D779EDA216FC912E003C686E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Nicola Miotto";
+			};
+			buildConfigurationList = D779EDA516FC912E003C686E /* Build configuration list for PBXProject "NMRemoteBundle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D779EDA116FC912E003C686E;
+			productRefGroup = D779EDAB16FC912E003C686E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D779EDA916FC912E003C686E /* NMRemoteBundle */,
+				D779EDC916FC912F003C686E /* NMRemoteBundleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D779EDA816FC912E003C686E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D779EDB816FC912E003C686E /* InfoPlist.strings in Resources */,
+				D779EDC016FC912F003C686E /* Default.png in Resources */,
+				D779EDC216FC912F003C686E /* Default@2x.png in Resources */,
+				D779EDC416FC912F003C686E /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D779EDC716FC912F003C686E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D779EDD616FC912F003C686E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D779EDC816FC912F003C686E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D779EDA616FC912E003C686E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D779EDBA16FC912E003C686E /* main.m in Sources */,
+				D779EDBE16FC912E003C686E /* NMAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D779EDC516FC912F003C686E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D779EDD916FC912F003C686E /* NMRemoteBundleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D779EDD016FC912F003C686E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D779EDA916FC912E003C686E /* NMRemoteBundle */;
+			targetProxy = D779EDCF16FC912F003C686E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D779EDB616FC912E003C686E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D779EDB716FC912E003C686E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D779EDD416FC912F003C686E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D779EDD516FC912F003C686E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D779EDDA16FC912F003C686E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D779EDDB16FC912F003C686E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D779EDDD16FC912F003C686E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NMRemoteBundle/NMRemoteBundle-Prefix.pch";
+				INFOPLIST_FILE = "NMRemoteBundle/NMRemoteBundle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D779EDDE16FC912F003C686E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NMRemoteBundle/NMRemoteBundle-Prefix.pch";
+				INFOPLIST_FILE = "NMRemoteBundle/NMRemoteBundle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D779EDE016FC912F003C686E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NMRemoteBundle.app/NMRemoteBundle";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NMRemoteBundle/NMRemoteBundle-Prefix.pch";
+				INFOPLIST_FILE = "NMRemoteBundleTests/NMRemoteBundleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D779EDE116FC912F003C686E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NMRemoteBundle.app/NMRemoteBundle";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NMRemoteBundle/NMRemoteBundle-Prefix.pch";
+				INFOPLIST_FILE = "NMRemoteBundleTests/NMRemoteBundleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D779EDA516FC912E003C686E /* Build configuration list for PBXProject "NMRemoteBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D779EDDA16FC912F003C686E /* Debug */,
+				D779EDDB16FC912F003C686E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D779EDDC16FC912F003C686E /* Build configuration list for PBXNativeTarget "NMRemoteBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D779EDDD16FC912F003C686E /* Debug */,
+				D779EDDE16FC912F003C686E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D779EDDF16FC912F003C686E /* Build configuration list for PBXNativeTarget "NMRemoteBundleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D779EDE016FC912F003C686E /* Debug */,
+				D779EDE116FC912F003C686E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D779EDA216FC912E003C686E /* Project object */;
+}
