@@ -7,20 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		263A4C3099A84A00992CBE4B /* libPods-NMRemoteBundleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FED983489D6C44A89FFF9B00 /* libPods-NMRemoteBundleTests.a */; };
+		C326A74031A448D684B5C7A4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D52F2BC911804CD3BCE6CAE5 /* libPods.a */; };
 		D779EDAE16FC912E003C686E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D779EDAD16FC912E003C686E /* UIKit.framework */; };
 		D779EDB016FC912E003C686E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D779EDAF16FC912E003C686E /* Foundation.framework */; };
 		D779EDB216FC912E003C686E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D779EDB116FC912E003C686E /* CoreGraphics.framework */; };
-		D779EDB816FC912E003C686E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D779EDB616FC912E003C686E /* InfoPlist.strings */; };
-		D779EDBA16FC912E003C686E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D779EDB916FC912E003C686E /* main.m */; };
-		D779EDBE16FC912E003C686E /* NMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D779EDBD16FC912E003C686E /* NMAppDelegate.m */; };
-		D779EDC016FC912F003C686E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D779EDBF16FC912F003C686E /* Default.png */; };
-		D779EDC216FC912F003C686E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D779EDC116FC912F003C686E /* Default@2x.png */; };
-		D779EDC416FC912F003C686E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D779EDC316FC912F003C686E /* Default-568h@2x.png */; };
 		D779EDCC16FC912F003C686E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D779EDCB16FC912F003C686E /* SenTestingKit.framework */; };
 		D779EDCD16FC912F003C686E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D779EDAD16FC912E003C686E /* UIKit.framework */; };
 		D779EDCE16FC912F003C686E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D779EDAF16FC912E003C686E /* Foundation.framework */; };
-		D779EDD616FC912F003C686E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D779EDD416FC912F003C686E /* InfoPlist.strings */; };
 		D779EDD916FC912F003C686E /* NMRemoteBundleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D779EDD816FC912F003C686E /* NMRemoteBundleTests.m */; };
+		D78EB4C7171366BA001E11BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D78EB4B4171366BA001E11BC /* main.m */; };
+		D78EB4C8171366BA001E11BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D78EB4B4171366BA001E11BC /* main.m */; };
+		D78EB4C9171366BA001E11BC /* NMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D78EB4B6171366BA001E11BC /* NMAppDelegate.m */; };
+		D78EB4CA171366BA001E11BC /* NMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D78EB4B6171366BA001E11BC /* NMAppDelegate.m */; };
+		D78EB4CD171366BA001E11BC /* NMRemoteStringExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D78EB4BA171366BA001E11BC /* NMRemoteStringExampleViewController.m */; };
+		D78EB4CE171366BA001E11BC /* NMRemoteStringExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D78EB4BA171366BA001E11BC /* NMRemoteStringExampleViewController.m */; };
+		D78EB4D3171366BA001E11BC /* NSBundle+Remote.m in Sources */ = {isa = PBXBuildFile; fileRef = D78EB4C0171366BA001E11BC /* NSBundle+Remote.m */; };
+		D78EB4D4171366BA001E11BC /* NSBundle+Remote.m in Sources */ = {isa = PBXBuildFile; fileRef = D78EB4C0171366BA001E11BC /* NSBundle+Remote.m */; };
+		D78EB4DF171367BC001E11BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D78EB4DA171367BC001E11BC /* Default-568h@2x.png */; };
+		D78EB4E0171367BC001E11BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D78EB4DA171367BC001E11BC /* Default-568h@2x.png */; };
+		D78EB4E1171367BC001E11BC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D78EB4DB171367BC001E11BC /* Default.png */; };
+		D78EB4E2171367BC001E11BC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D78EB4DB171367BC001E11BC /* Default.png */; };
+		D78EB4E3171367BC001E11BC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D78EB4DC171367BC001E11BC /* Default@2x.png */; };
+		D78EB4E4171367BC001E11BC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D78EB4DC171367BC001E11BC /* Default@2x.png */; };
+		D78EB4E5171367BC001E11BC /* NMRemoteStringExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D78EB4DD171367BC001E11BC /* NMRemoteStringExampleViewController.xib */; };
+		D78EB4E6171367BC001E11BC /* NMRemoteStringExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D78EB4DD171367BC001E11BC /* NMRemoteStringExampleViewController.xib */; };
+		D78EB4E7171367BC001E11BC /* nopanic.png in Resources */ = {isa = PBXBuildFile; fileRef = D78EB4DE171367BC001E11BC /* nopanic.png */; };
+		D78EB4E8171367BC001E11BC /* nopanic.png in Resources */ = {isa = PBXBuildFile; fileRef = D78EB4DE171367BC001E11BC /* nopanic.png */; };
+		D78EB4EA17136914001E11BC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D78EB4E917136914001E11BC /* README.md */; };
+		D78EB4EB17136914001E11BC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D78EB4E917136914001E11BC /* README.md */; };
+		D7F0AC711700B23900F4E934 /* NMBundleUpdateObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F0AC701700B23900F4E934 /* NMBundleUpdateObserver.m */; };
+		D7F0AC721700B23900F4E934 /* NMBundleUpdateObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F0AC701700B23900F4E934 /* NMBundleUpdateObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,25 +51,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		616825FDCC7E4B32B75C87A8 /* Pods-NMRemoteBundleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMRemoteBundleTests.xcconfig"; path = "Pods/Pods-NMRemoteBundleTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		9C6D0F5AA2014005AD6E6CA1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		D52F2BC911804CD3BCE6CAE5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D779EDAA16FC912E003C686E /* NMRemoteBundle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMRemoteBundle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D779EDAD16FC912E003C686E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D779EDAF16FC912E003C686E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D779EDB116FC912E003C686E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D779EDB516FC912E003C686E /* NMRemoteBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NMRemoteBundle-Info.plist"; sourceTree = "<group>"; };
-		D779EDB716FC912E003C686E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D779EDB916FC912E003C686E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D779EDBB16FC912E003C686E /* NMRemoteBundle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMRemoteBundle-Prefix.pch"; sourceTree = "<group>"; };
-		D779EDBC16FC912E003C686E /* NMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMAppDelegate.h; sourceTree = "<group>"; };
-		D779EDBD16FC912E003C686E /* NMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMAppDelegate.m; sourceTree = "<group>"; };
-		D779EDBF16FC912F003C686E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		D779EDC116FC912F003C686E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		D779EDC316FC912F003C686E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D779EDCA16FC912F003C686E /* NMRemoteBundleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NMRemoteBundleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D779EDCB16FC912F003C686E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D779EDD316FC912F003C686E /* NMRemoteBundleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NMRemoteBundleTests-Info.plist"; sourceTree = "<group>"; };
-		D779EDD516FC912F003C686E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D779EDD716FC912F003C686E /* NMRemoteBundleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMRemoteBundleTests.h; sourceTree = "<group>"; };
 		D779EDD816FC912F003C686E /* NMRemoteBundleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMRemoteBundleTests.m; sourceTree = "<group>"; };
+		D78EB4B4171366BA001E11BC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D78EB4B5171366BA001E11BC /* NMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMAppDelegate.h; sourceTree = "<group>"; };
+		D78EB4B6171366BA001E11BC /* NMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMAppDelegate.m; sourceTree = "<group>"; };
+		D78EB4B9171366BA001E11BC /* NMRemoteStringExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMRemoteStringExampleViewController.h; sourceTree = "<group>"; };
+		D78EB4BA171366BA001E11BC /* NMRemoteStringExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMRemoteStringExampleViewController.m; sourceTree = "<group>"; };
+		D78EB4BE171366BA001E11BC /* NMRemoteStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMRemoteStrings.h; sourceTree = "<group>"; };
+		D78EB4BF171366BA001E11BC /* NSBundle+Remote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Remote.h"; sourceTree = "<group>"; };
+		D78EB4C0171366BA001E11BC /* NSBundle+Remote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Remote.m"; sourceTree = "<group>"; };
+		D78EB4D51713672A001E11BC /* NMRemoteBundle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NMRemoteBundle-Info.plist"; sourceTree = "<group>"; };
+		D78EB4D81713677A001E11BC /* NMRemoteBundle-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NMRemoteBundle-Prefix.pch"; sourceTree = "<group>"; };
+		D78EB4DA171367BC001E11BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D78EB4DB171367BC001E11BC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D78EB4DC171367BC001E11BC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D78EB4DD171367BC001E11BC /* NMRemoteStringExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NMRemoteStringExampleViewController.xib; sourceTree = "<group>"; };
+		D78EB4DE171367BC001E11BC /* nopanic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nopanic.png; sourceTree = "<group>"; };
+		D78EB4E917136914001E11BC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D7F0AC6F1700B23900F4E934 /* NMBundleUpdateObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMBundleUpdateObserver.h; sourceTree = "<group>"; };
+		D7F0AC701700B23900F4E934 /* NMBundleUpdateObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMBundleUpdateObserver.m; sourceTree = "<group>"; };
+		FED983489D6C44A89FFF9B00 /* libPods-NMRemoteBundleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NMRemoteBundleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +91,7 @@
 				D779EDAE16FC912E003C686E /* UIKit.framework in Frameworks */,
 				D779EDB016FC912E003C686E /* Foundation.framework in Frameworks */,
 				D779EDB216FC912E003C686E /* CoreGraphics.framework in Frameworks */,
+				C326A74031A448D684B5C7A4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +102,7 @@
 				D779EDCC16FC912F003C686E /* SenTestingKit.framework in Frameworks */,
 				D779EDCD16FC912F003C686E /* UIKit.framework in Frameworks */,
 				D779EDCE16FC912F003C686E /* Foundation.framework in Frameworks */,
+				263A4C3099A84A00992CBE4B /* libPods-NMRemoteBundleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,10 +112,13 @@
 		D779EDA116FC912E003C686E = {
 			isa = PBXGroup;
 			children = (
+				D78EB4E917136914001E11BC /* README.md */,
 				D779EDB316FC912E003C686E /* NMRemoteBundle */,
 				D779EDD116FC912F003C686E /* NMRemoteBundleTests */,
 				D779EDAC16FC912E003C686E /* Frameworks */,
 				D779EDAB16FC912E003C686E /* Products */,
+				9C6D0F5AA2014005AD6E6CA1 /* Pods.xcconfig */,
+				616825FDCC7E4B32B75C87A8 /* Pods-NMRemoteBundleTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +138,8 @@
 				D779EDAF16FC912E003C686E /* Foundation.framework */,
 				D779EDB116FC912E003C686E /* CoreGraphics.framework */,
 				D779EDCB16FC912F003C686E /* SenTestingKit.framework */,
+				D52F2BC911804CD3BCE6CAE5 /* libPods.a */,
+				FED983489D6C44A89FFF9B00 /* libPods-NMRemoteBundleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,31 +147,19 @@
 		D779EDB316FC912E003C686E /* NMRemoteBundle */ = {
 			isa = PBXGroup;
 			children = (
-				D779EDBC16FC912E003C686E /* NMAppDelegate.h */,
-				D779EDBD16FC912E003C686E /* NMAppDelegate.m */,
-				D779EDB416FC912E003C686E /* Supporting Files */,
+				D78EB4D81713677A001E11BC /* NMRemoteBundle-Prefix.pch */,
+				D78EB4D51713672A001E11BC /* NMRemoteBundle-Info.plist */,
+				D78EB4B0171366BA001E11BC /* Example */,
+				D78EB4BD171366BA001E11BC /* Classes */,
 			);
 			path = NMRemoteBundle;
-			sourceTree = "<group>";
-		};
-		D779EDB416FC912E003C686E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D779EDB516FC912E003C686E /* NMRemoteBundle-Info.plist */,
-				D779EDB616FC912E003C686E /* InfoPlist.strings */,
-				D779EDB916FC912E003C686E /* main.m */,
-				D779EDBB16FC912E003C686E /* NMRemoteBundle-Prefix.pch */,
-				D779EDBF16FC912F003C686E /* Default.png */,
-				D779EDC116FC912F003C686E /* Default@2x.png */,
-				D779EDC316FC912F003C686E /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D779EDD116FC912F003C686E /* NMRemoteBundleTests */ = {
 			isa = PBXGroup;
 			children = (
-				D779EDD716FC912F003C686E /* NMRemoteBundleTests.h */,
+				D7F0AC6F1700B23900F4E934 /* NMBundleUpdateObserver.h */,
+				D7F0AC701700B23900F4E934 /* NMBundleUpdateObserver.m */,
 				D779EDD816FC912F003C686E /* NMRemoteBundleTests.m */,
 				D779EDD216FC912F003C686E /* Supporting Files */,
 			);
@@ -147,9 +170,43 @@
 			isa = PBXGroup;
 			children = (
 				D779EDD316FC912F003C686E /* NMRemoteBundleTests-Info.plist */,
-				D779EDD416FC912F003C686E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D78EB4B0171366BA001E11BC /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				D78EB4D9171367BC001E11BC /* Resources */,
+				D78EB4B4171366BA001E11BC /* main.m */,
+				D78EB4B5171366BA001E11BC /* NMAppDelegate.h */,
+				D78EB4B6171366BA001E11BC /* NMAppDelegate.m */,
+				D78EB4B9171366BA001E11BC /* NMRemoteStringExampleViewController.h */,
+				D78EB4BA171366BA001E11BC /* NMRemoteStringExampleViewController.m */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		D78EB4BD171366BA001E11BC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D78EB4BE171366BA001E11BC /* NMRemoteStrings.h */,
+				D78EB4BF171366BA001E11BC /* NSBundle+Remote.h */,
+				D78EB4C0171366BA001E11BC /* NSBundle+Remote.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D78EB4D9171367BC001E11BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D78EB4DA171367BC001E11BC /* Default-568h@2x.png */,
+				D78EB4DB171367BC001E11BC /* Default.png */,
+				D78EB4DC171367BC001E11BC /* Default@2x.png */,
+				D78EB4DD171367BC001E11BC /* NMRemoteStringExampleViewController.xib */,
+				D78EB4DE171367BC001E11BC /* nopanic.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +219,7 @@
 				D779EDA616FC912E003C686E /* Sources */,
 				D779EDA716FC912E003C686E /* Frameworks */,
 				D779EDA816FC912E003C686E /* Resources */,
+				01FA23EE03EE4ECC82067153 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +238,7 @@
 				D779EDC616FC912F003C686E /* Frameworks */,
 				D779EDC716FC912F003C686E /* Resources */,
 				D779EDC816FC912F003C686E /* ShellScript */,
+				6659F9BC70E3438AA870D69B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +266,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
+				es,
 			);
 			mainGroup = D779EDA116FC912E003C686E;
 			productRefGroup = D779EDAB16FC912E003C686E /* Products */;
@@ -224,10 +285,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D779EDB816FC912E003C686E /* InfoPlist.strings in Resources */,
-				D779EDC016FC912F003C686E /* Default.png in Resources */,
-				D779EDC216FC912F003C686E /* Default@2x.png in Resources */,
-				D779EDC416FC912F003C686E /* Default-568h@2x.png in Resources */,
+				D78EB4DF171367BC001E11BC /* Default-568h@2x.png in Resources */,
+				D78EB4E1171367BC001E11BC /* Default.png in Resources */,
+				D78EB4E3171367BC001E11BC /* Default@2x.png in Resources */,
+				D78EB4E5171367BC001E11BC /* NMRemoteStringExampleViewController.xib in Resources */,
+				D78EB4E7171367BC001E11BC /* nopanic.png in Resources */,
+				D78EB4EA17136914001E11BC /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,13 +298,46 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D779EDD616FC912F003C686E /* InfoPlist.strings in Resources */,
+				D78EB4E0171367BC001E11BC /* Default-568h@2x.png in Resources */,
+				D78EB4E2171367BC001E11BC /* Default.png in Resources */,
+				D78EB4E4171367BC001E11BC /* Default@2x.png in Resources */,
+				D78EB4E6171367BC001E11BC /* NMRemoteStringExampleViewController.xib in Resources */,
+				D78EB4E8171367BC001E11BC /* nopanic.png in Resources */,
+				D78EB4EB17136914001E11BC /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01FA23EE03EE4ECC82067153 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		6659F9BC70E3438AA870D69B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-NMRemoteBundleTests-resources.sh\"\n";
+		};
 		D779EDC816FC912F003C686E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,8 +358,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D779EDBA16FC912E003C686E /* main.m in Sources */,
-				D779EDBE16FC912E003C686E /* NMAppDelegate.m in Sources */,
+				D7F0AC711700B23900F4E934 /* NMBundleUpdateObserver.m in Sources */,
+				D78EB4C7171366BA001E11BC /* main.m in Sources */,
+				D78EB4C9171366BA001E11BC /* NMAppDelegate.m in Sources */,
+				D78EB4CD171366BA001E11BC /* NMRemoteStringExampleViewController.m in Sources */,
+				D78EB4D3171366BA001E11BC /* NSBundle+Remote.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +371,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D779EDD916FC912F003C686E /* NMRemoteBundleTests.m in Sources */,
+				D7F0AC721700B23900F4E934 /* NMBundleUpdateObserver.m in Sources */,
+				D78EB4C8171366BA001E11BC /* main.m in Sources */,
+				D78EB4CA171366BA001E11BC /* NMAppDelegate.m in Sources */,
+				D78EB4CE171366BA001E11BC /* NMRemoteStringExampleViewController.m in Sources */,
+				D78EB4D4171366BA001E11BC /* NSBundle+Remote.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,25 +388,6 @@
 			targetProxy = D779EDCF16FC912F003C686E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D779EDB616FC912E003C686E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D779EDB716FC912E003C686E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D779EDD416FC912F003C686E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D779EDD516FC912F003C686E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D779EDDA16FC912F003C686E /* Debug */ = {
@@ -330,7 +415,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -354,7 +439,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -363,6 +448,7 @@
 		};
 		D779EDDD16FC912F003C686E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C6D0F5AA2014005AD6E6CA1 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NMRemoteBundle/NMRemoteBundle-Prefix.pch";
@@ -374,6 +460,7 @@
 		};
 		D779EDDE16FC912F003C686E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C6D0F5AA2014005AD6E6CA1 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NMRemoteBundle/NMRemoteBundle-Prefix.pch";
@@ -385,6 +472,7 @@
 		};
 		D779EDE016FC912F003C686E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 616825FDCC7E4B32B75C87A8 /* Pods-NMRemoteBundleTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NMRemoteBundle.app/NMRemoteBundle";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -402,6 +490,7 @@
 		};
 		D779EDE116FC912F003C686E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 616825FDCC7E4B32B75C87A8 /* Pods-NMRemoteBundleTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NMRemoteBundle.app/NMRemoteBundle";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -436,6 +525,7 @@
 				D779EDDE16FC912F003C686E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D779EDDF16FC912F003C686E /* Build configuration list for PBXNativeTarget "NMRemoteBundleTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +534,7 @@
 				D779EDE116FC912F003C686E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
