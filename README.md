@@ -64,12 +64,16 @@ Of course you can add as many languages as you like. One important thing is to i
 </plist>
 ```
 
-There is also a refresh mechanism the can be setup straight in the `Info.plist`, by setting this further key:
+The values for these keys are indeed up to you.
+The refresh rate can be setup straight in the `Info.plist`, by setting this further key:
 
 ``` xml
        <key>NMBundleRefreshRate</key>
        <string>3</string> <!-- days -->
 ```
+
+If not set, default will be 1.
+
 
 Zip the `Resources` directory and put it somewhere where you like in the cyberspace.<br/>
 Finally, put this in your AppDelegate `appDidFinishLaunching`:
@@ -102,7 +106,19 @@ You can at this point set this just downloaded bundle as you main remote bundle 
 [NSBundle mainRemoteBundle];
 ```
 
-Given that the bundle takes some time to be loaded, and that it might happen that the server doesn't respond, it's always better to have a local fallback copy of the bundle.
+For instance
+
+```objective-c
+[[YoutViewController alloc] initWithNibName:@"YourViewController" bundle:[NSBundle mainRemoteBundle]];
+```
+
+or even
+
+```objective-c
+NSLocalizedStringFromTableInBundle(@"String key", nil, [NSBundle mainRemoteBundle], @"Comment"); 
+```
+
+and so on. Given that the bundle may take some time to be loaded, and that it might happen that the server doesn't respond, it's always better to have a local fallback copy of the resources in the `mainBundle` for the first time the app is run (just not to show pure emptiness in case of problems).
 
 Throughout the app you can then use the handy macro
 
@@ -113,9 +129,9 @@ NSRemoteLocalizedString(@"String key", @"Comment");
 that will:
 - check whether a main remote bundle exists
 - if it does, load the localized string from it
-- if it doesn't, load the localized string from the fallback local bundle
+- if it doesn't, load the localized string from the `[NSBundle mainBundle]`
 
-If you really want to seamlessly add *remoteness* to your string, you can even redefine the macro
+If you really want to seamlessly add *remoteness* to your strings, you can even redefine the macro
 
 ```objective-c
 NSLocalizedString(@"String key", @"Comment");
@@ -123,8 +139,8 @@ NSLocalizedString(@"String key", @"Comment");
 
 to be replaced with the remote version. At your risk.
 
-If a refresh rate is not set in the `Info.plist`ß, a default value of 1 (day) will be used.
-Anyway, the refresh is triggered whenever the *mainRemoteBundle* is accessed: if the bundle is older than the specified amount of days, in background a call is performed to updated. As soon as it returns, the local bundle is overwritten and the new resources will be automatically used.
+If a refresh rate is not set in the `Info.plist`, a default value of 1 (day) will be used.
+Anyway, the refresh is triggered whenever the *mainRemoteBundle* is accessed: if the bundle is older than the specified amount of days, a background call is performed to update it. As soon as it returns, the local bundle is overwritten and the new resources will be automatically used.
 
 Future
 -------
