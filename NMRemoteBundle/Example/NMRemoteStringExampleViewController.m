@@ -27,7 +27,7 @@
 }
 
 - (void)dealloc
-{NSLocalizedString(nil, nil)
+{
     [[NSNotificationCenter defaultCenter] removeObserver:self name:NMRemoteBundleDidUpdateNotification object:nil];
 }
 

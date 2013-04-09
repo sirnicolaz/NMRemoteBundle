@@ -182,7 +182,10 @@ static NSString *NMInfoPlistRelativePath = @"Resources/Info.plist";
                                                                                            object:nil];
                                    }
                                }
-                               self.isUpdating = [NSNumber numberWithBool:NO];
+                               
+                               @synchronized(self){
+                                   self.isUpdating = [NSNumber numberWithBool:NO];
+                               }
                            }
      ];
 
