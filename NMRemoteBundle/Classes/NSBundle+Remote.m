@@ -19,6 +19,7 @@ static NSOperationQueue *myQueue;
 /* Info.plist custom keys */
 #define kNMInfoPlistRefreshRateKey  @"NMBundleRefreshRate"
 #define kNMInfoPlistLastUpdated     @"NMBundleLastUpdated"
+#define kNMInfoPlistIsUpdating      @"NMBundleIsUpdating"
 #define kNMInfoPlistRemoteURLString @"NMBundleRemoteURLString"
 
 /* Strings */
@@ -42,7 +43,7 @@ static NSString *NMInfoPlistRelativePath = @"Resources/Info.plist";
 
 // Bundles need to be loaded (and cached) in order to be retrievable efficiently (and effectively)
 // by bundleWithIdentifier
-+ (void)initialize
++ (void)reloadBundles
 {
     CFURLRef rootURL;
     CFArrayRef bundleArray;
@@ -56,6 +57,13 @@ static NSString *NMInfoPlistRelativePath = @"Resources/Info.plist";
     CFRelease(bundleArray);
 }
 
+
++ (void)initialize
+{
+    [self reloadBundles];
+}
+
+
 #pragma mark - Accessors
 
 + (id)mainRemoteBundle
@@ -68,12 +76,12 @@ static NSString *NMInfoPlistRelativePath = @"Resources/Info.plist";
     
     NSBundle *remoteBundle = [NSBundle bundleWithIdentifier:identifier];
     
-    @synchronized(self){
+    @synchronized(remoteBundle){
         if ([remoteBundle needsUpdate]) {
             [remoteBundle refresh];
         }
     }
-
+    
     return remoteBundle;
 }
 
@@ -146,10 +154,9 @@ static NSString *NMInfoPlistRelativePath = @"Resources/Info.plist";
     NSDate* nextRefresh = [[NSCalendar currentCalendar] dateByAddingComponents:deltaComps
                                                                         toDate:lastUpdate
                                                                        options:0];
-    
     return ([nextRefresh compare:[NSDate date]] == NSOrderedAscending ||
             [nextRefresh compare:[NSDate date]] == NSOrderedSame) &&
-            !self.isUpdating;
+    ![self.isUpdating boolValue];
 }
 
 - (void)refresh
@@ -177,7 +184,9 @@ static NSString *NMInfoPlistRelativePath = @"Resources/Info.plist";
                                                                                            object:nil];
                                    }
                                    else if([NSBundle saveData:data atPath:self.bundlePath]) {
+                                       self.isUpdating = [NSNumber numberWithBool:NO];
                                        self.lastUpdated = [NSDate date];
+                                       self.remoteURL = request.URL;
                                        [[NSNotificationCenter defaultCenter] postNotificationName:NMRemoteBundleDidUpdateNotification
                                                                                            object:nil];
                                    }
@@ -188,7 +197,7 @@ static NSString *NMInfoPlistRelativePath = @"Resources/Info.plist";
                                }
                            }
      ];
-
+    
 }
 
 #pragma mark - Iinitializer
@@ -258,10 +267,6 @@ static NSString *NMInfoPlistRelativePath = @"Resources/Info.plist";
             NSMutableDictionary* infoDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
             [infoDict setObject:value forKey:key];
             [infoDict writeToFile:plistPath atomically:NO];
-            [manager setAttributes:[NSDictionary dictionaryWithObject:[NSDate date]
-                                                               forKey:NSFileModificationDate]
-                      ofItemAtPath:self.bundlePath
-                             error:nil];
         }
     }
 }
@@ -291,14 +296,16 @@ static NSString *NMInfoPlistRelativePath = @"Resources/Info.plist";
 
 - (void)setIsUpdating:(NSNumber *)isUpdating
 {
-    [self willChangeValueForKey:@"isUpdating"];
-    objc_setAssociatedObject(self, "isUpdating", isUpdating, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    [self didChangeValueForKey:@"isUpdating"];
+    [self storePlistValue:[isUpdating stringValue] forKey:kNMInfoPlistIsUpdating];
 }
 
 - (NSNumber *)isUpdating
 {
-    return objc_getAssociatedObject(self, @"isUpdating");
+    NSString *infoPlist = [self pathForResource: @"Info" ofType: @"plist"];
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:infoPlist];
+    NSString *isUpdating = [dict objectForKey:kNMInfoPlistIsUpdating];
+    
+    return [NSNumber numberWithBool:[isUpdating isEqualToString:@"1"]];
 }
 
 @end
